@@ -17,6 +17,9 @@ const standardFibonnaci = (n) => {
   return memo[n];
 };
 
+// This is the same fibonnaci method but using memoization.
+// The memoization is done by storing the results in an array.
+// Thanks to Javascript's closures, the array is accessible from the inner function.
 const memoizedFibonnaci = (n) => {
   let memo = [0, 1];
 
